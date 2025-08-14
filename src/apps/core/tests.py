@@ -1,0 +1,11 @@
+import pytest
+from django.contrib.auth.models import User
+
+
+@pytest.mark.django_db
+def test_user_creation():
+    """
+    Um teste de exemplo para garantir que a criação de usuário funciona.
+    """
+    User.objects.create_user(username="testuser", password="password")
+    assert User.objects.count() == 1
