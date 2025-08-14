@@ -66,7 +66,7 @@ Siga os passos abaixo para iniciar um novo projeto a partir deste template.
     * Mova o conteúdo relevante do `settings.py` do template (como a configuração de `DATABASES`, `INSTALLED_APPS` com `src.apps...`, etc.) para o novo arquivo `src/nome_do_projeto/settings.py`.
     * **Importante:** Verifique se os caminhos como `ROOT_URLCONF` e `WSGI_APPLICATION` estão usando o `nome_do_projeto` correto.
 
-2.  **Ajuste o `pyproject.toml` (Sua Observação!):**
+2.  **Ajuste o `pyproject.toml`:**
     * Abra o arquivo `pyproject.toml` e atualize a linha `DJANGO_SETTINGS_MODULE` com o nome do seu projeto.
     * **DE:** `DJANGO_SETTINGS_MODULE = "src.petcare.settings"`
     * **PARA:** `DJANGO_SETTINGS_MODULE = "src.nome_do_projeto.settings"`
